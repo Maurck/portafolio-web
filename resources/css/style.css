@@ -5,6 +5,7 @@
 }
 
 html {
+    background-color: #d6d6d6;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
@@ -18,10 +19,31 @@ html {
 }
 
 header {
-    background-color: #d6d6d6;
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+.projects{
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.project-title h1{
+    text-align: center;
+    padding: 5% 5%;
+}
+
+.image-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.project-description{
+    padding: 5% 5%;
+    text-align: left;
 }
 
 h1 {
