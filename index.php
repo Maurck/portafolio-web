@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -51,11 +52,28 @@
             </div>
             <img src="resources/img/chroniverse.jpg" class="image-center">
             <div class="project-description">
-                <h4>
+                <p>
                     Mi rol fue el de programador en Unity, además me encargué de las animaciones, creacion de texturas y programacion de multiples sistemas
                     siguiendo diferentes patrones de diseño como el <b>Singleton</b>.
-                </h4>
+                </p>
             </div>
+
+            <div class="project-title">
+                <h1>
+                    FisiBici
+                </h1>
+            </div>
+            <img src="resources/img/fisibici.jpg" class="image-center">
+            <div class="project-description">
+                <p>
+                    Mi rol fue el de desarrollador backend empleando tecnologias como la libreria <strong>Flask</strong> en python, despliegue en
+                    la plataforma <strong>Heroku</strong> y la base de datos no relacional <strong>mongoDB</strong> alojada en la nube.
+                </p>
+            </div>
+            <div class="project-link">
+                <a href="http://fisi-bici.herokuapp.com/" target="_blank" class="link">link de la pagina web</a>
+            </div>
+
         </div>
     </body>
 </html>

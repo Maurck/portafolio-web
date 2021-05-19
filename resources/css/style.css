@@ -41,14 +41,35 @@ header {
     width: 50%;
 }
 
-.project-description{
-    padding: 5% 5%;
+.project-description, .project-description-final {
     text-align: left;
+}
+
+.project-description {
+    padding-top: 5%;
+}
+
+.project-description-final {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.project-link {
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.link {
+    text-decoration: none;
 }
 
 h1 {
     margin: 0;
     font-size: 200%;
+}
+
+p{
+    font-size: 120%;
 }
 
 .background-text-box {
@@ -63,6 +84,7 @@ h1 {
 }
 
 .NavFixedWrapper {
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +94,7 @@ h1 {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #cbcbcb;
+    background-color: rgb(203, 203, 203, 1);
     margin: 0 auto;
 }
 
