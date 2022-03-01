@@ -11,8 +11,8 @@ html {
     color: #DFDFDF;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 300;
-    font-size: 20px;
     text-rendering: optimizeLegibility;
+    scroll-padding-top: 4rem;
 }
 
 .container {
@@ -20,21 +20,34 @@ html {
     max-width: 1280px;
 }
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
 .header {
     height: 4rem;
+    width: 100%;
     align-items: center;
-}
-
-.header__elements {
+    position: fixed;
+    background:#2a2a2bea;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 0 2rem;
 }
+
+.header__logo {
+    font-size: 1.5em;
+}
+
+.header__sections-links {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.header__sections-links a{
+    text-decoration: none;
+    color: #DFDFDF;
+}
+
+.header__sections-links a:hover {
+    color: #7AB4EE;
+} 
 
 .hero {
     height: 100vh;
@@ -44,7 +57,7 @@ html {
 
 .hero__presentation {
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 }
 
 .separator {
@@ -58,22 +71,37 @@ html {
 
 .projects__title {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
 }
 
 .project {
     margin-bottom: 2rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.project__body {
+    display: flex;
     gap: 1rem;
 }
 
+.project__info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
 .project__title {
-    text-align: center;
+    margin-bottom: 1.5rem;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+.project__description--highlighted {
+    color: #7AB4EE;
 }
 
 .project__image {
@@ -81,46 +109,18 @@ html {
     height: 275px;
 }
 
-.project-description, .project-description-final {
-    text-align: left;
-}
-
-.project-description {
-    padding-top: 5%;
-}
-
-.project-description-final {
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.project-link {
-    padding-top: 3%;
-    padding-bottom: 5%;
-}
-
-.link {
+.project__link {
+    padding: 1rem;
+    background: linear-gradient(180deg, #7AB4EE 0%, #2282E3 100%);
+    box-shadow: 0px 2px 6px rgba(29, 111, 194, 0.5);
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: #181818; 
+    cursor: pointer;
     text-decoration: none;
 }
 
-h1 {
-    margin: 0;
-    font-size: 200%;
-}
-
-p{
-    font-size: 120%;
-}
-
-.background-text-box {
-    font-family: 'Rajdhani', sans-serif;
-}
-
-
-
-.Button {
-    margin: 10px;
-    text-decoration: none;
-    font-weight: 400;
-    color: #DFDFDF;
+.project__link:hover {
+    background: linear-gradient(180deg, #2282E3 0%, #7AB4EE 100%);
 }
