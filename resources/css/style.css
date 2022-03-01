@@ -145,20 +145,20 @@ html {
 .links__body {
     text-align: center;
     gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
 }
 
 .link__button {
-    padding: 1rem;
-    background: linear-gradient(180deg, #7AB4EE 0%, #2282E3 100%);
-    box-shadow: 0px 2px 6px rgba(29, 111, 194, 0.5);
-    border: none;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 600;
-    color: #181818; 
-    cursor: pointer;
-    text-decoration: none;
 }
 
-.link__button:hover {
-    background: linear-gradient(180deg, #2282E3 0%, #7AB4EE 100%);
+.link__buttton-image {
+    width: 6rem;
+    height: 6rem;
+}
+
+.link__buttton-image:hover {
+
 }
