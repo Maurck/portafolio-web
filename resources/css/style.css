@@ -109,6 +109,10 @@ html {
     height: 275px;
 }
 
+.project__footer {
+    margin-bottom: 4rem;
+}
+
 .project__link {
     padding: 1rem;
     background: linear-gradient(180deg, #7AB4EE 0%, #2282E3 100%);
@@ -122,5 +126,39 @@ html {
 }
 
 .project__link:hover {
+    background: linear-gradient(180deg, #2282E3 0%, #7AB4EE 100%);
+}
+
+.links {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;   
+}
+
+.links__title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.links__body {
+    text-align: center;
+    gap: 1rem;
+}
+
+.link__button {
+    padding: 1rem;
+    background: linear-gradient(180deg, #7AB4EE 0%, #2282E3 100%);
+    box-shadow: 0px 2px 6px rgba(29, 111, 194, 0.5);
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: #181818; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link__button:hover {
     background: linear-gradient(180deg, #2282E3 0%, #7AB4EE 100%);
 }
