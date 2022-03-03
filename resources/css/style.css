@@ -1,163 +1,250 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Rajdhani&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Rajdhani&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  background: #222223;
-  color: #dfdfdf;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-  scroll-padding-top: 4rem;
-  box-sizing: border-box;
+    background: #222223;
+    color: #DFDFDF;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 4rem;
+    box-sizing: border-box;
 }
-
+  
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+box-sizing: inherit;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1280px;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
+
+
 .header {
-  height: 4rem;
-  width: 100%;
-  align-items: center;
-  position: fixed;
-  background: #2a2a2bea;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
+    width: 100%;
+    position: fixed;
+    background:#2a2a2bea;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: 0.7rem;
+}
+
+@media(min-width:768px){
+    .header {
+        height: 4rem;
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
 }
 
 .header__logo {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .header__sections-links {
-  display: flex;
-  gap: 1.25rem;
+    display: flex;
+    gap: 1.25rem;
 }
 
-.header__sections-links a {
-  text-decoration: none;
-  color: #dfdfdf;
+.header__sections-links a{
+    text-decoration: none;
+    color: #DFDFDF;
 }
 
 .header__sections-links a:hover {
-  color: #7ab4ee;
-}
+    color: #7AB4EE;
+} 
 
 .hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero__presentation {
-  text-align: center;
-  font-size: 2.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: auto 2rem;
+}
+
+@media(min-width:768px){
+    .hero__presentation {
+        text-align: center;
+        font-size: 2.5rem;
+        margin: inherit;
+    }
 }
 
 .separator {
-  margin: 2rem auto;
+    margin: 2rem auto;
+
 }
 
 .projects__title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+@media(min-width:768px){
+    .projects__title {
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
 }
 
 .project {
-  margin: 2rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  flex-direction: column;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+@media(min-width:768px){
+    .project {
+        gap: 0.5rem;
+    }
 }
 
 .project__body {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column-reverse;
+}
+
+@media(min-width:768px){
+    .project__body {
+        flex-direction: row;
+    }
 }
 
 .project__info {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    gap: 1rem;
+}
+
+@media(min-width:768px){
+    .project__info {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 2fr 1fr;
+
+    }
 }
 
 .project__title {
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+@media(min-width:768px){
+    .project__title {
+        margin: unset;
+        margin-bottom: 1.5rem;   
+        font-size: 2.5rem;
+    }
+}
+
+.project__description {
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+@media(min-width:768px){
+    .project__description {
+        margin: unset;
+        font-size: unset;
+    }
 }
 
 .project__description--highlighted {
-  color: #7ab4ee;
+    color: #7AB4EE;
 }
 
 .project__image {
-  width: 225px;
-  height: 225px;
+    width: 225px;
+    height: 225px;
+    align-self: center;
+}
+
+@media(min-width:768px){
+    .project__image {
+        align-self: unset;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        align-self: center;
+        margin: 0 auto;
+    }
 }
 
 .project__footer {
-  margin: 1rem 4rem 1rem 0;
+    margin: 1rem 4rem 1rem 0;
 }
 
 .project__link {
-  padding: 1rem;
-  background: linear-gradient(180deg, #7ab4ee 0%, #2282e3 100%);
-  box-shadow: 0px 2px 6px rgba(29, 111, 194, 0.5);
-  border: none;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 600;
-  color: #181818;
-  cursor: pointer;
-  text-decoration: none;
+    padding: 1rem;
+    background: linear-gradient(180deg, #7AB4EE 0%, #2282E3 100%);
+    box-shadow: 0px 2px 6px rgba(29, 111, 194, 0.5);
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    color: #181818; 
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .project__link:hover {
-  background: linear-gradient(180deg, #2282e3 0%, #7ab4ee 100%);
+    background: linear-gradient(180deg, #2282E3 0%, #7AB4EE 100%);
 }
 
 .links {
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;   
 }
 
 .links__title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .links__body {
-  text-align: center;
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-
-.link__button {
+    text-align: center;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 .link__buttton-image {
-  width: 6rem;
-  height: 6rem;
+    width: 5rem;
+    height: 5rem;
 }
 
-.link__buttton-image:hover {
+@media(min-width:768px){
+    .link__buttton-image {
+        width: 6rem;
+        height: 6rem;
+    }  
 }
