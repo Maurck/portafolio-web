@@ -286,7 +286,16 @@ box-sizing: inherit;
 }
 
 .project__footer {
-    margin: 1rem 4rem 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+@media(min-width:768px){
+    .project__footer {
+        justify-content: flex-start;
+        
+    }
 }
 
 .project__link {
