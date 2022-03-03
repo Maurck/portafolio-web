@@ -10,18 +10,59 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
       rel="stylesheet"
     />
-    <title>Página personal</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Mauricio Linares</title>
   </head>
   <body>
     <header class="header">
       <p class="header__logo">ML</p>
       <nav class="header__sections-links">
-        <a class="" href="/"> Acerca de mi </a>
+        <a class="" href="#sections-about"> Acerca de mí </a>
         <a class="" href="#sections-projects"> Proyectos </a>
         <a class="" href="#sections-links"> Contacto </a>
       </nav>
+      <div class="header__spacer header__menu">
+        <label for="sidebar-check">
+          <span class="material-icons"> menu </span>
+        </label>
+      </div>
+      <!-- sidebar -->
+      <input id="sidebar-check" type="checkbox" />
+      <nav id="sidebar" class="sidebar">
+        <button href="#" class="button sidebar__close-icon">
+          <label for="sidebar-check">
+            <span class="material-icons icon-close"> close </span>
+          </label>
+        </button>
+
+        <div class="sidebar__items">
+          <a
+            class="sidebar__item"
+            href="#sections-about"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Acerca de mí</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#sections-projects"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Proyectos</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#sections-links"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Contacto</a
+          >
+        </div>
+      </nav>
     </header>
-    <div class="container hero">
+    <div class="container hero" id="sections-about">
       <h1 class="hero__presentation">
         ¡Hola! Mi nombre es Mauricio Linares, soy estudiante de 9no ciclo de la
         carrera ing. de software y desarrollador Web Backend
@@ -51,7 +92,6 @@
               alojada en la nube.
             </p>
           </div>
-
         </div>
         <div class="project__footer">
           <a
@@ -82,7 +122,6 @@
               alojada en la nube.
             </p>
           </div>
-          
         </div>
         <div class="project__footer">
           <a
