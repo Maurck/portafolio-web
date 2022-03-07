@@ -18,13 +18,16 @@
     />
     <title>Mauricio Linares</title>
   </head>
+
+  <!-- HEADER -->
   <body>
     <header class="header">
-      <p class="header__logo">ML</p>
-      <nav class="header__sections-links">
-        <a class="" href="#sections-about"> Acerca de mí </a>
+      <a href="./index.html" class="header__logo">
+        <p >ML</p>
+      </a>
+      <nav class="header__sections-footer">
         <a class="" href="#sections-projects"> Proyectos </a>
-        <a class="" href="#sections-links"> Contacto </a>
+        <a class="" href="#sections-footer"> Contacto </a>
       </nav>
       <div class="header__spacer header__menu">
         <label for="sidebar-check">
@@ -43,13 +46,6 @@
         <div class="sidebar__items">
           <a
             class="sidebar__item"
-            href="#sections-about"
-            onclick="document.getElementById('sidebar-check').checked = false"
-            >Acerca de mí</a
-          >
-
-          <a
-            class="sidebar__item"
             href="#sections-projects"
             onclick="document.getElementById('sidebar-check').checked = false"
             >Proyectos</a
@@ -57,20 +53,25 @@
 
           <a
             class="sidebar__item"
-            href="#sections-links"
+            href="#sections-footer"
             onclick="document.getElementById('sidebar-check').checked = false"
             >Contacto</a
           >
         </div>
       </nav>
     </header>
-    <div class="container hero" id="sections-about">
+    <!-- HERO -->
+    <div class="container hero">
       <h1 class="hero__presentation">
         ¡Hola! Mi nombre es Mauricio Linares, soy estudiante de 9no ciclo de la
         carrera ing. de software y desarrollador Web Backend
       </h1>
+      <a class="hero__link button" href="./me.html">
+        Saber más de mi
+      </a>
     </div>
     <hr class="container separator" id="sections-projects" />
+    <!-- PROJECTS -->
     <div class="container projects">
       <h3 class="projects__title">
         Algunos de los proyectos en los que he participado
@@ -99,14 +100,14 @@
           <a
             href="https://fisinius.netlify.app/"
             target="_blank"
-            class="project__link"
+            class="project__link button"
             >Ver demo</a
           >
 
           <a
             href="https://github.com/Maurck/fisinius"
             target="_blank"
-            class="project__link"
+            class="project__link button"
             >Código Fuente</a
           >
         </div>
@@ -136,13 +137,13 @@
           <a
             href="https://artemis-art.netlify.app/"
             target="_blank"
-            class="project__link"
+            class="project__link button"
             >Ver demo</a
           >
           <a
             href="https://github.com/Maurck/Artemis-backend"
             target="_blank"
-            class="project__link"
+            class="project__link button"
             >Código Fuente</a
           >
         </div>
@@ -171,22 +172,36 @@
           <a
             href="https://fisi-bici.herokuapp.com/"
             target="_blank"
-            class="project__link"
+            class="project__link button"
             >Ver demo</a
           >
           <a
             href="https://github.com/Maurck/FisiBici"
             target="_blank"
-            class="project__link"
+            class="project__link button"
             >Código Fuente</a
           >
         </div>
       </div>
     </div>
-    <hr class="container separator" id="sections-links" />
-    <div class="container links">
-      <h3 class="links__title">Contáctame</h3>
-      <ul class="links__body">
+
+    <!-- TECHNOLOGIES -->
+
+    <hr class="container separator" id="sections-technologies" />
+    <div class="container technologies">
+      <h3 class="technologies__title">
+        Tecnologías utilizadas
+      </h3>   
+      <a class="technologies__link button" href="./technologies.html">
+        Ver tecnologías
+      </a> 
+    </div>
+
+    <!-- FOOTER -->
+    
+    <footer id="sections-footer" class="container footer">
+      <h3 class="footer__title">Contáctame</h3>
+      <ul class="footer__body">
         <li>
           <a
             href="https://github.com/Maurck"
@@ -218,6 +233,6 @@
           /></a>
         </li>
       </ul>
-    </div>
+    </footer>
   </body>
 </html>

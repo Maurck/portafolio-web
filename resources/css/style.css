@@ -20,12 +20,26 @@ html {
 box-sizing: inherit;
 }
 
+.button {
+    padding: 1rem;
+    background: linear-gradient(180deg, #7AB4EE 0%, #2282E3 100%);
+    box-shadow: 0px 2px 6px rgba(29, 111, 194, 0.5);
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    text-align: center;
+    color: #181818; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1280px;
 }
 
 .header {
+    z-index: 1;
     width: 100%;
     position: fixed;
     background:#2a2a2bea;
@@ -44,26 +58,28 @@ box-sizing: inherit;
 
 .header__logo {
     font-size: 1.5em;
-    padding-left: 1.5rem;
+    padding: 0 1.5rem;
+    text-decoration: none;
+    color: white;
 }
 
-.header__sections-links {
+.header__sections-footer {
     display: none;
 }
 
 @media(min-width:768px){
-    .header__sections-links {
+    .header__sections-footer {
         display: flex;
         gap: 1.25rem;
     }
 }
 
-.header__sections-links a{
+.header__sections-footer a{
     text-decoration: none;
     color: #DFDFDF;
 }
 
-.header__sections-links a:hover {
+.header__sections-footer a:hover {
     color: #7AB4EE;
 } 
 
@@ -95,7 +111,7 @@ box-sizing: inherit;
     height: 100vh;
     background: #2a2a2b;
     transition: all 0.5s ease;
-    z-index: 5;
+    z-index: 2;
     align-items: flex-end;
 }
 
@@ -159,6 +175,24 @@ box-sizing: inherit;
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.hero__link {
+    position: absolute;
+    bottom: 5%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+    width: 12rem;
+}
+
+@media(min-width:768px) {
+    .hero__link {
+        bottom: 18%;
+    }
 }
 
 .hero__presentation {
@@ -299,35 +333,32 @@ box-sizing: inherit;
 }
 
 .project__link {
-    padding: 1rem;
-    background: linear-gradient(180deg, #7AB4EE 0%, #2282E3 100%);
-    box-shadow: 0px 2px 6px rgba(29, 111, 194, 0.5);
-    border: none;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 600;
-    color: #181818; 
-    cursor: pointer;
-    text-decoration: none;
 }
 
 .project__link:hover {
     background: linear-gradient(180deg, #2282E3 0%, #7AB4EE 100%);
 }
 
-.links {
-    margin-bottom: 2.5rem;
+.footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;   
+    background-color: #2a2a2bea;
 }
 
-.links__title {
+@media (min-width: 768px) {
+    .footer {
+        max-width: none;
+    }
+}
+
+.footer__title {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-.links__body {
+.footer__body {
     text-align: center;
     gap: 1rem;
     display: flex;
@@ -347,4 +378,109 @@ box-sizing: inherit;
         width: 6rem;
         height: 6rem;
     }  
+}
+
+.biography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+@media(min-width:768px) {
+    .biography {
+        padding-top: 4rem;
+        flex-direction: row-reverse;
+        gap: 1rem;
+    }
+}
+
+.biography__info {
+    margin-bottom: 1rem;
+}
+
+@media(min-width:768px) {
+    .biography__info {
+        flex: 2 1 auto;
+    }
+}
+
+.biography__image {
+    margin-top: 6rem;
+    width: 50%;     
+}
+
+@media(min-width:768px) {
+    .biography__image {
+        align-self: flex-start;
+        margin: 4rem;
+        width: 35%;
+        flex: 1 1 auto;
+    }
+}
+
+@media(min-width: 768px) {
+    .biography__title {
+        text-align: center;
+    }
+}
+
+@media(min-width: 1024px) {
+    .biography__text {
+        /* text-align: center; */
+        margin: 1rem calc(50ch - 55%);
+    }
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.technologies__title {
+    text-align: center;
+}
+
+.technologies__link {
+    margin: auto;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    padding-bottom: 3rem;
+}
+
+.technology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technologies-used {
+    margin-top: 4rem;
+}
+
+.technology__title {
+    text-align: center;
+}
+
+.technology__image {
+    width: 50%;
+    height: 50%;
+}
+
+@media(min-width:768px) {
+    .technology__image {
+        width: 30%;
+        height: 30%;
+    }
 }

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./resources/img/favicon.svg" />
+    <link rel="mask-icon" href="./resources/img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Mauricio Linares</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__logo">
+        <p>ML</p>
+      </a>
+      <nav class="header__sections-footer">
+        <a class="" href="#sections-about"> Acerca de mí </a>
+        <a class="" href="#sections-footer"> Contacto </a>
+      </nav>
+      <div class="header__spacer header__menu">
+        <label for="sidebar-check">
+          <span class="material-icons"> menu </span>
+        </label>
+      </div>
+      <!-- sidebar -->
+      <input id="sidebar-check" type="checkbox" />
+      <nav id="sidebar" class="sidebar">
+        <button href="#" class="button sidebar__close-icon">
+          <label for="sidebar-check">
+            <span class="material-icons icon-close"> close </span>
+          </label>
+        </button>
+
+        <div class="sidebar__items">
+          <a
+            class="sidebar__item"
+            href="#sections-about"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Acerca de mí</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#sections-footer"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Contacto</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="sections-about" class="biography">
+        <img src="./resources/img/yo.jpg" class="biography__image" />
+        <div class="biography__info">
+          <h2 class="biography__title">Acerca de mi</h2>
+          <p class="biography__text">
+            Mi nombre es Mauricio Linares, tengo 21 años y soy desarrollador
+            backend con experiencia en diversos frameworks como Express
+            (Javascript) y Flask (Python). Actualmente estudio al carrera de
+            ingeniería de software en la UNMSM. Me desempeñé como desarrollador
+            Backend y Analista en la empresa consultora Bitzone cumpliendo con
+            las espectativas de los clientes de manera eficiente. Considero que,
+            en términos de código, las buenas prácticas y la mantenibilidad son
+            claves para el éxito de un proyecto no solo en la parte Backend sino
+            a través de todos los aspectos del mismo, para esto, se aplica
+            Patrones de diseño y los principios SOLID además de arquitecturas
+            limpias como la Hexagonal. Además me gusta conversar, cantar, bailar
+            y entender a las personas además de a las máquinas :)
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="sections-footer" class="container footer">
+      <h3 class="footer__title">Contáctame</h3>
+      <ul class="footer__body">
+        <li>
+          <a
+            href="https://github.com/Maurck"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/github_logo.svg"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/mau.riccio.3"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/facebook_logo.svg"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mauricio-linares20/"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/linkedin_logo.svg"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

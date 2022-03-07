@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./resources/img/favicon.svg" />
+    <link rel="mask-icon" href="./resources/img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Mauricio Linares</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__logo">
+        <p>ML</p>
+      </a>
+      <nav class="header__sections-footer">
+        <a class="" href="#sections-technologies"> Tecnologias </a>
+        <a class="" href="#sections-footer"> Contacto </a>
+      </nav>
+      <div class="header__spacer header__menu">
+        <label for="sidebar-check">
+          <span class="material-icons"> menu </span>
+        </label>
+      </div>
+      <!-- sidebar -->
+      <input id="sidebar-check" type="checkbox" />
+      <nav id="sidebar" class="sidebar">
+        <button href="#" class="button sidebar__close-icon">
+          <label for="sidebar-check">
+            <span class="material-icons icon-close"> close </span>
+          </label>
+        </button>
+
+        <div class="sidebar__items">
+          <a
+            class="sidebar__item"
+            href="#sections-technologies"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Tecnologias</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#sections-footer"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Contacto</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="sections-technologies" class="tech-stack">
+        <div class="technologies-used">
+          <div class="technology">
+            <h2 class="technology__title">Flask</h2>
+            <img
+              src="./resources/img/flask.jpg"
+              alt=""
+              class="technology__image"
+            />
+            <p class="technology__description">
+              Flask es un framework minimalista escrito en Python que permite
+              crear aplicaciones web rápidamente y con un mínimo número de
+              líneas de código. Está basado en la especificación WSGI de
+              Werkzeug y el motor de templates Jinja2 y tiene una licencia BSD.
+            </p>
+          </div>
+
+          <div class="technology">
+            <h2 class="technology__title">Express</h2>
+            <img
+              src="./resources/img/express.jpg"
+              alt=""
+              class="technology__image"
+            />
+            <p class="technology__description">
+              Express es una infraestructura de aplicaciones web Node.js mínima
+              y flexible que proporciona un conjunto sólido de características
+              para las aplicaciones web y móviles.
+            </p>
+          </div>
+
+          <div class="technology">
+            <h2 class="technology__title">MongoDB</h2>
+            <img
+              src="./resources/img/mongodb.jpg"
+              alt=""
+              class="technology__image"
+            />
+            <p class="technology__description">
+              MongoDB (del inglés humongous, "enorme") es un sistema de base de
+              datos NoSQL orientado a documentos de código abierto y escrito en
+              C++, que en lugar de guardar los datos en tablas lo hace en
+              estructuras de datos BSON (similar a JSON) con un esquema
+              dinámico.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="sections-footer" class="container footer">
+      <h3 class="footer__title">Contáctame</h3>
+      <ul class="footer__body">
+        <li>
+          <a
+            href="https://github.com/Maurck"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/github_logo.svg"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/mau.riccio.3"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/facebook_logo.svg"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mauricio-linares20/"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/linkedin_logo.svg"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
