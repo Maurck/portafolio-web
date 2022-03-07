@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./resources/img/favicon.svg" />
+  <link rel="mask-icon" href="./resources/img/favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Mauricio Linares</title>
+  </head>
+
+  <!-- HEADER -->
+  <body>
+    <header class="header">
+      <a href="./index.html" class="header__logo">
+        <p >ML</p>
+      </a>
+      <nav class="header__sections-footer">
+        <a class="" href="#sections-projects"> Proyectos </a>
+        <a class="" href="#sections-footer"> Contacto </a>
+      </nav>
+      <div class="header__spacer header__menu">
+        <label for="sidebar-check">
+          <span class="material-icons"> menu </span>
+        </label>
+      </div>
+      <!-- sidebar -->
+      <input id="sidebar-check" type="checkbox" />
+      <nav id="sidebar" class="sidebar">
+        <button href="#" class="button sidebar__close-icon">
+          <label for="sidebar-check">
+            <span class="material-icons icon-close"> close </span>
+          </label>
+        </button>
+
+        <div class="sidebar__items">
+          <a
+            class="sidebar__item"
+            href="#sections-projects"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Proyectos</a
+          >
+
+          <a
+            class="sidebar__item"
+            href="#sections-footer"
+            onclick="document.getElementById('sidebar-check').checked = false"
+            >Contacto</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- PROJECTS -->
+    <div id="sections-projects" class="container projects">
+      <h3 class="projects__title">
+        Algunos de los proyectos en los que he participado
+      </h3>
+
+      <div class="project">
+        <div class="project__body">
+          <div class="project__info">
+            <h3 class="project__title">Fisiniús</h3>
+            <img src="resources/img/fisinius.jpg" class="project__image" />
+            <p class="project__description">
+              Mi rol fue el de desarrollador backend empleando tecnologias como
+              la libreria
+              <strong class="project__description--highlighted">Flask</strong>
+              en
+              <strong class="project__description--highlighted">Python</strong>,
+              despliegue en la plataforma
+              <strong class="project__description--highlighted">Heroku</strong>
+              y la base de datos no relacional
+              <strong class="project__description--highlighted">mongoDB</strong>
+              alojada en la nube.
+            </p>
+          </div>
+        </div>
+        <div class="project__footer">
+          <a
+            href="https://fisinius.netlify.app/"
+            target="_blank"
+            class="project__link button"
+            >Ver demo</a
+          >
+
+          <a
+            href="https://github.com/Maurck/fisinius"
+            target="_blank"
+            class="project__link button"
+            >Código Fuente</a
+          >
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__body">
+          <div class="project__info">
+            <h3 class="project__title">Artemis</h3>
+            <img src="resources/img/artemis.jpg" class="project__image" />
+            <p class="project__description">
+              Mi rol fue el de desarrollador backend empleando tecnologias como
+              la libreria
+              <strong class="project__description--highlighted">Express</strong>
+              en
+              <strong class="project__description--highlighted"
+                >Javascript</strong
+              >, despliegue en la plataforma
+              <strong class="project__description--highlighted">Heroku</strong>
+              y la base de datos no relacional
+              <strong class="project__description--highlighted">mongoDB</strong>
+              alojada en la nube.
+            </p>
+          </div>
+        </div>
+        <div class="project__footer">
+          <a
+            href="https://artemis-art.netlify.app/"
+            target="_blank"
+            class="project__link button"
+            >Ver demo</a
+          >
+          <a
+            href="https://github.com/Maurck/Artemis-backend"
+            target="_blank"
+            class="project__link button"
+            >Código Fuente</a
+          >
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project__body">
+          <div class="project__info">
+            <h3 class="project__title">FisiBici</h3>
+            <img src="resources/img/fisibici.jpg" class="project__image" />
+            <p class="project__description">
+              Mi rol fue el de desarrollador backend empleando tecnologias como
+              la libreria
+              <strong class="project__description--highlighted">Flask</strong>
+              en
+              <strong class="project__description--highlighted">Python</strong>,
+              despliegue en la plataforma
+              <strong class="project__description--highlighted">Heroku</strong>
+              y la base de datos no relacional
+              <strong class="project__description--highlighted">mongoDB</strong>
+              alojada en la nube.
+            </p>
+          </div>
+        </div>
+        <div class="project__footer">
+          <a
+            href="https://fisi-bici.herokuapp.com/"
+            target="_blank"
+            class="project__link button"
+            >Ver demo</a
+          >
+          <a
+            href="https://github.com/Maurck/FisiBici"
+            target="_blank"
+            class="project__link button"
+            >Código Fuente</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    
+    <footer id="sections-footer" class="container footer">
+      <h3 class="footer__title">Contáctame</h3>
+      <ul class="footer__body">
+        <li>
+          <a
+            href="https://github.com/Maurck"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/github_logo.svg"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/mau.riccio.3"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/facebook_logo.svg"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mauricio-linares20/"
+            target="_blank"
+            class="link__button"
+            ><img
+              class="link__buttton-image"
+              src="resources/img/linkedin_logo.svg"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

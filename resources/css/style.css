@@ -214,19 +214,28 @@ box-sizing: inherit;
 
 }
 
-.projects__title {
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.2rem;
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding-top: 6rem;
+    gap: 1rem;
 }
 
-@media(min-width:768px){
-    .projects__title {
-        margin-bottom: 3rem;
-        font-size: 1.5rem;
-    }
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.projects-section__title {
+    text-align: center;
+    padding: 0 0.5rem;
+}
+
+.projects-section__link {
+    margin: auto;
 }
 
 .project {
@@ -380,6 +389,10 @@ box-sizing: inherit;
     }  
 }
 
+.projects__title {
+    margin: 0 0.5rem;
+}
+
 .biography {
     display: flex;
     flex-direction: column;
@@ -432,18 +445,18 @@ box-sizing: inherit;
     }
 }
 
-.technologies {
+.technologies-section {
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
     gap: 1rem;
 }
 
-.technologies__title {
+.technologies-section__title {
     text-align: center;
 }
 
-.technologies__link {
+.technologies-section__link {
     margin: auto;
 }
 
